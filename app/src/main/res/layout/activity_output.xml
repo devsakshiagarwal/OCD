@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_18"
+        android:layout_marginLeft="@dimen/dp_18"
+        android:layout_marginTop="@dimen/margin_double"
+        android:text="@string/name"
+        android:textColor="@color/color91"
+        android:textSize="@dimen/text_11"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/etName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_double"
+        android:layout_marginRight="@dimen/margin_double"
+        android:inputType="textPersonName"
+        android:textColor="@color/color_4c"
+        android:textSize="@dimen/text_14"
+        app:layout_constraintTop_toBottomOf="@id/tvName" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_18"
+        android:layout_marginLeft="@dimen/dp_18"
+        android:layout_marginTop="@dimen/margin_standard"
+        android:text="@string/email"
+        android:textColor="@color/color91"
+        android:textSize="@dimen/text_11"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etName" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/etEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_double"
+        android:layout_marginRight="@dimen/margin_double"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/color_4c"
+        android:textSize="@dimen/text_14"
+        app:layout_constraintTop_toBottomOf="@id/tvEmail" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvGender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_18"
+        android:layout_marginLeft="@dimen/dp_18"
+        android:layout_marginTop="@dimen/margin_standard"
+        android:text="@string/gender"
+        android:textColor="@color/color91"
+        android:textSize="@dimen/text_11"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etEmail" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/etGender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_double"
+        android:layout_marginRight="@dimen/margin_double"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/color_4c"
+        android:textSize="@dimen/text_14"
+        app:layout_constraintTop_toBottomOf="@id/tvGender" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvCountry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_18"
+        android:layout_marginLeft="@dimen/dp_18"
+        android:layout_marginTop="@dimen/margin_standard"
+        android:text="@string/country"
+        android:textColor="@color/color91"
+        android:textSize="@dimen/text_11"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etGender" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/spinnerCountry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_double"
+        android:layout_marginRight="@dimen/margin_double"
+        android:textColor="@color/color_4c"
+        android:textSize="@dimen/text_14"
+        app:layout_constraintTop_toBottomOf="@id/tvCountry" />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvCity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_18"
+        android:layout_marginLeft="@dimen/dp_18"
+        android:layout_marginTop="@dimen/margin_standard"
+        android:text="@string/city"
+        android:textColor="@color/color91"
+        android:textSize="@dimen/text_11"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/spinnerCountry" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/spinnerCity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_double"
+        android:layout_marginRight="@dimen/margin_double"
+        android:textColor="@color/color_4c"
+        android:textSize="@dimen/text_14"
+        app:layout_constraintTop_toBottomOf="@id/tvCity" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
